@@ -9,18 +9,11 @@ Write a program to print "Hey, my first java program!" using output statement.
 To write a Java program that prints the message "Hey, my first java program!" to the output using a print/println statement.
 
 ## ALGORITHM :
-1.	
-2.
-3.
-4.
-5.
-1.Start
-2.Create a class named Main.
-3.Inside the class, define the main() method (the entry point of the program).
-4.Use the System.out.println() statement to print the message "Hey, my first java program!" to the screen.
-5.End
-
-
+1.	Start
+2. Create a class named Main.
+3. Inside the class, define the main() method (the entry point of the program).
+4. Use the System.out.println() statement to print the message "Hey, my first java program!" to the screen.
+5. End
 
 ## PROGRAM:
  ```
@@ -57,3 +50,4 @@ class prog
 
 ## RESULT:
 The Java program was successfully executed, and it printed the message
+
