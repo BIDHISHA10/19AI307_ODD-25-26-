@@ -13,6 +13,7 @@ Otherwise, it announces the floor number - print - "Floor {number}" .
 
 Write a Java program to simulate this elevator logic for a given floor number.
 
+<img width="222" height="137" alt="image" src="https://github.com/user-attachments/assets/bb41ddc8-6886-49e0-95a1-de1979d6c163" />
 
 
 ## AIM:
@@ -39,8 +40,8 @@ To develop a Java program that checks a given floor number and displays a specia
  ```
 /*
 Program to implement a conditional statement using Java
-Developed by: SINGAMALA VENKATA SAI KUMAR REDDY
-RegisterNumber:  212223230208
+Developed by: GOGINENI BIDHISHA
+RegisterNumber:  212223040048
 */
 ```
 
@@ -81,5 +82,6 @@ public class MagicalElevator {
 
 ## RESULT:
 The program correctly prints “Skipped,” “Beware!,” “Blessings!,” or “Floor {number}” according to the elevator's magical rules.
+
 
 
