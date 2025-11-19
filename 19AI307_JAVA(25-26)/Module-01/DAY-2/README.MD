@@ -1,28 +1,36 @@
 # Ex.No:1(B) CONDITIONAL STATEMENT
 
 ## QUESTION:
+In a magical building, an elevator behaves oddly:
 
-A library charges a fine for every book returned late. For first 5 days the fine is 50 paise, for 6-10 days fine is one rupee and above 10 days fine is 5 rupees. If you return the book after 30 days your membership will be cancelled - Print ("Your Membership would be Cancelled.")
+If the floor number is divisible by 3 and 5, it says "Skipped".
 
-Write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message
+If the floor number is divisible by 3 only, it says "Beware!".
+
+If the floor number is divisible by 5 only, it says "Blessings!".
+
+Otherwise, it announces the floor number - print - "Floor {number}" .
+
+Write a Java program to simulate this elevator logic for a given floor number.
+
+
 
 ## AIM:
-To write a program to accept the number of days the member is late to return the book and display the fine or the appropriate message
+To develop a Java program that checks a given floor number and displays a special message based on its divisibility by 3 and/or 5.
+
 
 ## ALGORITHM :
-1.	Start the program.
-2.Import the necessary package java.util for using the Scanner class.
-3.Declare the Main class.
-4.Inside the class, define the main() method.
-5.Create an object of Scanner to accept user input.
-6.Prompt the user to enter the number of days the book is returned late.
-7.Read and store the value in a variable, e.g., days.
-8.If days > 30, display: "Your Membership would be Cancelled."
-9.Else if days > 10, display the fine as 5 rupees.
-10.Else if days >= 6, display the fine as 1 rupee.
-11.Else if days >= 1, display the fine as 50 paise.
-12.Else, display "No fine".
-13.End the program.
+
+1. Start the program and read the floor number from the user.
+
+2. Check if the floor is divisible by both 3 and 5; if true, display "Skipped".
+
+3. Otherwise, check if the floor is divisible only by 3; if true, display "Beware!".
+
+4. Otherwise, check if the floor is divisible only by 5; if true, display "Blessings!".
+
+5. If none of the above conditions are met, display "Floor {floor number}", then stop the program.
+
 
 
 
@@ -31,8 +39,8 @@ To write a program to accept the number of days the member is late to return the
  ```
 /*
 Program to implement a conditional statement using Java
-Developed by: GOGINENI BIDHISHA
-RegisterNumber:  212223040048
+Developed by: SINGAMALA VENKATA SAI KUMAR REDDY
+RegisterNumber:  212223230208
 */
 ```
 
@@ -41,31 +49,25 @@ RegisterNumber:  212223040048
 ```
 import java.util.Scanner;
 
-public class LibraryFineCalculator {
+public class MagicalElevator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int daysLate = scanner.nextInt();
-        double fine = 0.0;
-        if (daysLate > 30) {
-            System.out.println("Fine Amount Pay to Rs :170.00");
-            System.out.println("Your Membership would be Cancelled.");
-        } else if (daysLate > 10) {
-            fine = daysLate * 5;
-            System.out.printf("Fine Amount Pay to Rs :%.2f\n", fine);
-        } else if (daysLate > 5) {
-            fine = daysLate * 1;
-            System.out.printf("Fine Amount Pay to Rs :%.2f\n", fine);
-        } else if (daysLate > 0) {
-            fine = daysLate * 0.5;
-            System.out.printf("Fine Amount Pay to Rs :%.2f\n", fine);
+
+        int floor = scanner.nextInt();
+
+        if (floor % 3 == 0 && floor % 5 == 0) {
+            System.out.println("Skipped");
+        } else if (floor % 3 == 0) {
+            System.out.println("Beware!");
+        } else if (floor % 5 == 0) {
+            System.out.println("Blessings!");
         } else {
-            System.out.println("No fine.");
+            System.out.println("Floor " + floor);
         }
 
         scanner.close();
     }
 }
-
 ```
 
 
@@ -74,7 +76,10 @@ public class LibraryFineCalculator {
 
 ## OUTPUT:
 
+<img width="457" height="286" alt="image" src="https://github.com/user-attachments/assets/7ead6423-9d57-4f95-861d-bf8e646af948" />
+
 
 ## RESULT:
+The program correctly prints “Skipped,” “Beware!,” “Blessings!,” or “Floor {number}” according to the elevator's magical rules.
 
-The program successfully accepts the number of late days and displays the correct fine or message based on the library rules.
+
