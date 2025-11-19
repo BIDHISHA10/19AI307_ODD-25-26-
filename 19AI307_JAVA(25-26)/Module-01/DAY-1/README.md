@@ -49,5 +49,6 @@ class prog
 
 
 ## RESULT:
-The Java program was successfully executed, and it printed the message
+The Java program was successfully executed, and it printed the message.
+
 
