@@ -15,10 +15,13 @@ To create a class Car with attributes brand, model, and year, create two objects
     i.String brand
     ii.String model
     iii.int year
+
 4.Create a constructor to initialize these attributes.
+
 5.In the main method:
     i.Create two objects of the Car class with different values.
     ii.Print the details of both cars in the required format.
+
 6.End the program.
 
 
@@ -67,4 +70,5 @@ public class prog {
 
 ## RESULT:
 The program successfully created two Car objects and printed.
+
 
