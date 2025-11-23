@@ -8,16 +8,21 @@ To write a Java method printName(String name) that takes a user's name as input 
 
 ## ALGORITHM :
 1.Start the program.
-2.Import the necessary package 'java.util'
+
+2.Import the necessary package 'java.util'.
+
 3.Import the Scanner class for user input.
+
 4.Define a method printName(String name) that prints:
    "Hello, " + name
-4.In the main() method:
+
+5.In the main() method:
 a. Create a Scanner object.
 b. Ask the user to enter their name.
 c. Store the input in a String variable.
 d. Call the printName() method and pass the name as argument.
-5.End the program.
+
+6.End the program.
 
 
 
@@ -60,4 +65,5 @@ public class main{
 
 ## RESULT:
 The program was successfully executed.
+
 
